@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baikal: El Último Escape</title>
+    <!-- Agregar la librería de Phaser -->
+    <script src="./js/phaser.js"></script> <!-- Archivo Phaser.js en la misma carpeta -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>    
+           /* Contenedor del menú o área fuera del juego */
+        .outer-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('/Assets/backgrounds/fondo fondoso.png') no-repeat center center fixed; /* Fondo de imagen */
+            background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+            z-index: -1;  /* Asegúrate de que esté detrás del área del juego */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Contenedor para el fondo fuera del juego -->
+    <div class="outer-container"></div>
+    
+    <!-- El juego se renderizará aquí -->
+    <script type="module" src="js/javascript.js"></script> <!-- Tu código JavaScript -->
+</body>
+</html>
